@@ -33,7 +33,7 @@ describe('Preconditions', () => {
       .should('not.exist')
     })
 
-    //Should fails. Supposed issue: search by full name doesn't work
+    //Fail. Supposed issue: search by full name doesn't work
     it('Valid filter: full name + city', () => {
       cy.addFilter("julia cunningham", "sheffield")
       cy.get(candidate.profileContainer)
@@ -43,7 +43,7 @@ describe('Preconditions', () => {
         .and('contain', 'sheffield')
     })
 
-    //Supposed issue: filter shouldn't be case sencitive
+    //Fail. Supposed issue: filter shouldn't be case sencitive
     it('Valid filter: case sensitive', () => {
       cy.addFilter("Julia", "Sheffield")
       cy.get(candidate.profileContainer)
@@ -83,6 +83,8 @@ describe('Preconditions', () => {
 })
 
   describe('Clear filter functionality check', () => {
+    
+    //Fail. Supposed issue: input fields weren't cleared
     it('Clear filter', () => {
       cy.addFilter("fake", "fake")
       cy.get(filter.clearButton).click()
