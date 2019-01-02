@@ -5,11 +5,13 @@ Tests were written in Cypress.io :cool::free: JavaScript framework with using cu
 
 Tests cover filter functionality of application which represents dashboard with candidates. Filter is possible by name and city. User could sets or clears the filter.
 
+-------------------------------------------------------------------------------------------------------------------------------------------
 
 App locally available on http://localhost:3000
 
 Or via CI on http://localhost:5000
 
+------------------------------------------------------------------------------------------------------------------------------------------
 
 :heavy_check_mark: For Cypress installation please refer to [Cypress.io](https://www.cypress.io/)
 
