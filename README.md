@@ -13,8 +13,8 @@ Or via CI on http://localhost:5000
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-:heavy_check_mark: For Cypress installation please refer to [Cypress.io](https://www.cypress.io/)
+:heavy_check_mark: For Cypress installation refer to [Cypress.io](https://www.cypress.io/)
 
-:heavy_check_mark: All Cypress documentation could be found [here](https://docs.cypress.io/)
+:heavy_check_mark: Cypress documentation could be found [here](https://docs.cypress.io/)
 
 :heavy_check_mark: To setup cucumber plagin refer to [cucumber-preprocessor](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor)
