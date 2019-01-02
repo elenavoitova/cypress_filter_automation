@@ -1,6 +1,6 @@
 Feature: Filter functionality
 
-Background:ature
+Background: before each
   Given I open api page
   Then I see "OOS: Crew applications" in the title
 
