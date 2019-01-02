@@ -8,20 +8,7 @@ Tests cover filter functionality of application which represents dashboard with 
 App locally available on http://localhost:3000
 Or via CI on http://localhost:5000
 
-# Installation
+For Cypress installation please refer to [Cypress.io](https://www.cypress.io/)
+All Cypress documentation could be found [here](https://docs.cypress.io/)
 
-## Install Cypress
-`npm install cypress --save-dev`
-
-## Install Cucumber plagin
-
-`npm install --save-dev cypress-cucumber-preprocessor`
-
-Add to cypress/plugins/index.js :
-```
-const cucumber = require('cypress-cucumber-preprocessor').default
-module.exports = (on, config) => {
-  on('file:preprocessor', cucumber())
-}
-```
-
+To setup cucumber refer to [cucumber-preprocessor](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor)
