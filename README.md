@@ -2,7 +2,9 @@
 
 # About
 Tests were written in Cypress.io JavaScript framework with using cucumber-preprocessor for BDD style
+
 Tests cover filter functionality of application which represents dashboard with candidates. Filter is possible by name and city. User could sets or clears the filter.
+
 App locally available on http://localhost:3000
 Or via CI on http://localhost:5000
 
