@@ -1,10 +1,9 @@
-
 //Filter module
   export const filter = {
-    nameInput: '#name',
-    cityInput: '#city',
-    submitButton: '[type=submit]',
-    clearButton: '[type=button]'
+    name: '#name',
+    city: '#city',
+    submit: '[type=submit]',
+    clear: '[type=button]'
   };
 
 //User info container
