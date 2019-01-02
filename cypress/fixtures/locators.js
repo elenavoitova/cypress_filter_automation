@@ -14,8 +14,6 @@
     upButton: '.CrewMember-up',
     fullName: '.CrewMemeber-name > div:nth-child(1)',
     city: '.CrewMemeber-name > div:nth-child(2)',
-    //Missing appropriate class i.e crewMember-down
-    //downButton: '[type=button]'
     buttonsContainer: '.CrewMember-toolbar'
   };
 
