@@ -21,9 +21,9 @@ Background: before each
   Then I don't see candidate profile
   Examples:
   | name     | city      |
-  | fakeName | fakeCity  | # nonexistent
-  | hereford | lloyd     | # swapped data
-  | lloyd    | sheffield | # name from one + city from another
+  | fakeName | fakeCity  |
+  | hereford | lloyd     |
+  | lloyd    | sheffield |
 
   Scenario Outline: positive cases
   When I set "<name>" and "<city>" in filter
@@ -31,12 +31,12 @@ Background: before each
   And I see expected "<name>" and "<city>" in profile
   Examples:
   | name              | city      |
-  | julia cunninghams | sheffield | # full name + city
-  | Julia             | Sheffield | # case sensitive
-  | julia             | {enter}   | # filtered by first name
-  | cunningham        | {enter}   | # filtered by second name
-  | {enter}           | sheffield | # filtered by city
-  | julia             | sheffield | # name + city 
+  | julia cunninghams | sheffield |
+  | Julia             | Sheffield |
+  | julia             | {enter}   | 
+  | cunningham        | {enter}   | 
+  | {enter}           | sheffield |
+  | julia             | sheffield |
 
   Scenario: Clear filter
   Given I set "fakeName" and "fakeCity" in filter
