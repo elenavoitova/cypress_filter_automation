@@ -7,9 +7,6 @@ RUN npm install --save-dev cypress-cucumber-preprocessor
 COPY cypress.json ./
 COPY cypress ./cypress
 COPY package.json ./
-# Confirm the cypress install
-RUN npm link
-RUN npm link cypress-cucumber-preprocessor
-# Running tests on container startup
-RUN $(npm bin)/cypress verify
-RUN $(npm bin)/cypress run
+
+# Running tests
+CMD ./node_modules/.bin/cypress run \
