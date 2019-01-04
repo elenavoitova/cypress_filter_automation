@@ -5,7 +5,7 @@ import {Given, When, Then, And} from "cypress-cucumber-preprocessor/steps";
 //const url = `http://localhost:5000`
 
 Given(`I open api page`, () => {
-    cy.visit(`/`);
+    cy.visit(`http://${Cypress.env('TARGET_HOST')}:5000/`)
 })
 
 Then(`I see {string} in the title`, (title) => {
