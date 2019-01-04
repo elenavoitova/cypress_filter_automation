@@ -16,4 +16,4 @@ services:
     depends_on:
       - application
     environment:
-     - CYPRESS_baseUrl=http://application
+     - CYPRESS_TARGET_HOST=application
