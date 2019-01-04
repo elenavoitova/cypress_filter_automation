@@ -23,4 +23,4 @@ Or via CI on http://localhost:5000
 
 Add application to root folder
 
-And use command `docker-compose --build`
+And use command `docker-compose up --build`
