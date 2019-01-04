@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+  application:
+    build:
+      context: ./oos-ca
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
+
+  cypress:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - application
+    environment:
+     - CYPRESS_baseUrl=http://application
