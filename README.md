@@ -21,6 +21,6 @@ Or via CI on http://localhost:5000
 
 # Run in Docker
 
-Add application to root folder
+Add test application to root folder
 
 And use command `docker-compose up --build`
